@@ -30,6 +30,8 @@ to the require section of your `composer.json` file.
 Add something like this in the model `rules()`.
 
 ```php
+    //Assuming the model has attribute case, field1, and field2.
+    //Each rule group will be validated when the case attribute match the cases.
     public function rules() {
         ['case', PetraBarus\Yii2\SwitchCaseValidator\Validator::class,
             'cases' => [
