@@ -50,6 +50,8 @@ Add something like this in the model `rules()`.
     }
 ```
 
+Or see the test files.
+
 ## Test
 
 To run test, execute
