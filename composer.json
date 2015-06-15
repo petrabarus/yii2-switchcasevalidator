@@ -1,0 +1,23 @@
+{
+    "name": "petrabarus/yii2-switchcasevalidator",
+    "description": "Validator that will run on switch-case-like conditional",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petra Barus",
+            "email": "petra.barus@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PetraBarus\\Yii2\\SwitchCaseValidator\\": "src/"
+        }
+    }
+}
