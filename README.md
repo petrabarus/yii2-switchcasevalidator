@@ -30,7 +30,7 @@ to the require section of your `composer.json` file.
 This package require
 
 - Latest Yii2
-- PHP 5.5 or later
+- PHP 5.4 or later
 
 ## Usage
 
@@ -41,6 +41,8 @@ Add something like this in the model `rules()`.
     //Each rule group will be validated when the case attribute match the cases.
     public function rules() {
         ['case', PetraBarus\Yii2\SwitchCaseValidator\Validator::class,
+            //For PHP 5.4, you can use PetraBarus\Yii2\SwitchCaseValidator\Validator::className() or
+            // string 'PetraBarus\Yii2\SwitchCaseValidator\Validator'
             'cases' => [
                 1 => [
                     ['field1', 'required'],
