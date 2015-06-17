@@ -66,7 +66,7 @@ class Validator extends \yii\validators\Validator {
      * @param \yii\base\Model $model the data model to be validated
      * @param string $attribute the name of the attribute to be validated.
      */
-    public function validateAttribute(\yii\base\Model $model, $attribute)
+    public function validateAttribute($model, $attribute)
     {
         $value = $model->$attribute;
         if ($value === null || $value === '') {
