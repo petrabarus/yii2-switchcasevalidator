@@ -5,7 +5,7 @@ Validator that will run on switch-case-like conditional
 [![Latest Stable Version](https://poser.pugx.org/petrabarus/yii2-switchcasevalidator/v/stable.svg)](https://packagist.org/packages/petrabarus/yii2-switchcasevalidator)
 [![Total Downloads](https://poser.pugx.org/petrabarus/yii2-switchcasevalidator/downloads.svg)](https://packagist.org/packages/petrabarus/yii2-switchcasevalidator)
 [![Latest Unstable Version](https://poser.pugx.org/petrabarus/yii2-switchcasevalidator/v/unstable.svg)](https://packagist.org/packages/petrabarus/yii2-switchcasevalidator)
-
+[![Build Status](https://travis-ci.org/petrabarus/yii2-switchcasevalidator.svg?branch=add-travis-ci)](https://travis-ci.org/petrabarus/yii2-switchcasevalidator)
 
 ## Installation
 
@@ -24,6 +24,13 @@ or add
 ```
 
 to the require section of your `composer.json` file.
+
+## Requirement
+
+This package require
+
+- Latest Yii2
+- PHP 5.5 or later
 
 ## Usage
 
