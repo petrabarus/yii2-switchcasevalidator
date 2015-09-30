@@ -83,6 +83,10 @@ class Validator extends \yii\validators\Validator {
                 $found = true;
             }
         }
+
+        if ($found === false && !empty($this->default)) {
+            $this->applyValidators($model, $this->default);
+        }
     }
     
     /**

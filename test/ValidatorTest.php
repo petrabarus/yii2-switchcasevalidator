@@ -19,6 +19,10 @@ class Validator extends PHPUnit_Framework_TestCase {
                         ['field1', 'compare', 'compareValue' => 'Value 1'],
                         ['field2', 'email']
                     ]
+                ],
+                'default' => [
+                    ['field1', 'compare', 'compareValue' => 'Value 2'],
+                    ['field2', 'compare', 'compareValue' => 'Value 4'],
                 ]
             ]
         );
@@ -50,6 +54,14 @@ class Validator extends PHPUnit_Framework_TestCase {
         $model->field2 = 'test@example.com';
         $model->validate();
         $this->assertFalse($model->hasErrors());
-        
+
+        $model->case = 4;
+        $model->validate();
+        $this->assertTrue($model->hasErrors());
+
+        $model->field1 = 'Value 2';
+        $model->field2 = 'Value 4';
+        $model->validate();
+        $this->assertFalse($model->hasErrors());
     }
 }

@@ -54,6 +54,11 @@ Add something like this in the model `rules()`.
                     ['field1', 'compare', 'compareValue' => 'Value 1'],
                     ['field2', 'email']
                 ]
+            ],
+            //This will be executed if no cases matches.
+            'default' => [
+                ['field1', 'compare', 'compareValue' => 'Value 2'],
+                ['field1', 'compare', 'compareValue' => 'Value 4'],
             ]
         ]
     }
